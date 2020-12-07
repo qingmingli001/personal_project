@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+body {
+  background-color:skyblue;
+  padding: 20px;
+}
+header {
+  text-align: center;
+  border-bottom: orangered solid 5px;
+  border-top: orangered solid 5px;
+
+}
+ul {
+  padding-inline-start: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+}
+header li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 10px 40px;
+  font-size: larger;
+}
+
+.self_introduction {
+  border-bottom: orangered solid 5px;
+}
+.left_part {
+  width: 33%;
+  display: inline-block;
+}
+.right_part {
+  width: 66%;
+  display: inline-block;
+  font-size: x-large;
+  padding-right: 20px;
+}
+
+.scuba_diving img {
+  width: 33%;
+  height: auto;
+}
+
+.scuba_diving {
+  border-bottom: orangered solid 5px;
+  padding-bottom: 10px;
+}
+
+.left_part img {
+  width: 90%;
+  height: auto;
+}
+.skiing {
+  display: inline-block;
+  border-bottom: orangered solid 5px;
+}
+.square {
+  width: 66%;
+  display: inline-block;
+}
+.skiing img{
+  width: 32%;
+  height: auto;
+}
+.square img {
+  width: 49%;
+  height: auto;
+}
+.software_developer {
+  border-bottom: orangered solid 5px;
+  padding-bottom: 10px;
+}
+.software_developer ul li{
+  font-size: xx-large;
+  text-align: left;
+}
+.software_developer ul li a{
+  color: brown;
+}
+.about_me img, .blog1 img, .blog4 img {
+  width: 70%;
+}
+
+.about_me p, .scuba_diving p, .skiing p, .blog1 p, .blog2 p, .blog3 p, .blog4 p ,.blog4 ul,.blog4 li,.individual_blog p {
+  font-size: large;
+  text-align: left;
+}
