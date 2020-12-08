@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/qingmingli001/personal_project#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "autoprefixer": "^10.0.4",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "minify": "^6.0.1"
   }
 }

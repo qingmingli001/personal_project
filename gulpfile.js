@@ -1,4 +1,10 @@
+
 const {src, dest, series, parallel} = require('gulp');
+const sourcemaps = require('gulp-sourcemaps');
+const minify = require('gulp-minify');
+const autoprefixer = require('gulp-autoprefixer');
+const concat = require('gulp-concat');
+const postcss = require('gulp-postcss');
 
 
 function htmlTask(){
@@ -9,6 +15,11 @@ function htmlTask(){
 
 function stylesTask(){
   return src('src/css/*.css')
+  .pipe(sourcemaps.init())
+  .pipe(postcss(autoprefixer()))
+  .pipe(minify())
+  .pipe(sourcemaps.write())
+  .pipe(concat('all.css'))
   .pipe(dest('dist/css'))
 }
 
@@ -28,5 +39,5 @@ exports.styles = stylesTask;
 exports.images = imagesTask;
 exports.js = jsTask;
 
-exports.default = series(this.html, this.styles, this.images, this.js);
+exports.default = series(htmlTask, stylesTask, imagesTask, jsTask);
 
