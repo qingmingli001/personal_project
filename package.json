@@ -2,7 +2,7 @@
   "name": "final-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,11 +17,13 @@
   },
   "homepage": "https://github.com/qingmingli001/personal_project#readme",
   "devDependencies": {
-    "autoprefixer": "^10.0.4",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-concat": "^2.6.1",
-    "gulp-postcss": "^9.0.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "minify": "^6.0.1"
+    "gulp-imagemin": "^7.1.0",
+    "gulp-minify": "^3.1.0"
+  },
+  "dependencies": {
+    "gulp-sourcemaps": "^3.0.0"
   }
 }
